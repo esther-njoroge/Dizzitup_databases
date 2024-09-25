@@ -1,0 +1,39 @@
+GET http://localhost:3000/api/ShopProvider
+
+###
+POST http://localhost:3000/api/ShopProvider
+Content-Type: application/json
+
+{
+ "shop_provider_id": 1,
+  "USID": 1,             
+  "UUID ": 1,           
+  "shop_name": "Mphavu",          
+  "shop_group_name": "Mphavu",     
+  "shop_products_types": "Services",
+  "shop_address": "Ngumba 201",        
+  "shop_phone_number": "+254712456378",   
+  "shop_city" : "Nairobi",          
+  "shop_neighbourhood": "Garden City",  
+  "shop_country": "Kenya",       
+  "shop_geolocation": "1.2,36.8",    
+  "shop_african_location": "Nairobi",
+  "shop_website": "www.mpavu.co.ke",        
+  "shop_email": "mphavu@gmail.com",          
+  "shop_facebook_page": "mphavu_shop", 
+  "shop_instagram": "mphavu_shop",      
+  "shop_whatsapp_number": "+254712456378", 
+  "shop_telegram_number": "+254712456378", 
+  "shop_dizzitup_e_store": ""
+}
+
+###
+DELETE  http://localhost:3000/api/ShopProvider/1
+
+###
+PATCH  http://localhost:3000/api/ShopProvider/2
+Content-Type: : application/json
+
+{
+    ""
+}
