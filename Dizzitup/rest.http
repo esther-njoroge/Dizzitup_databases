@@ -1,39 +1,66 @@
-GET http://localhost:3000/api/ShopProvider
+GET http://localhost:4000/api/ShopProvider
+
 
 ###
-POST http://localhost:3000/api/ShopProvider
+POST http://localhost:4000/api/users
 Content-Type: application/json
 
 {
- "shop_provider_id": 1,
-  "USID": 1,             
-  "UUID ": 1,           
-  "shop_name": "Mphavu",          
-  "shop_group_name": "Mphavu",     
-  "shop_products_types": "Services",
-  "shop_address": "Ngumba 201",        
-  "shop_phone_number": "+254712456378",   
-  "shop_city" : "Nairobi",          
-  "shop_neighbourhood": "Garden City",  
-  "shop_country": "Kenya",       
-  "shop_geolocation": "1.2,36.8",    
-  "shop_african_location": "Nairobi",
-  "shop_website": "www.mpavu.co.ke",        
-  "shop_email": "mphavu@gmail.com",          
-  "shop_facebook_page": "mphavu_shop", 
-  "shop_instagram": "mphavu_shop",      
-  "shop_whatsapp_number": "+254712456378", 
-  "shop_telegram_number": "+254712456378", 
-  "shop_dizzitup_e_store": ""
+  "title": "Mr.",
+  "first_name": "John",
+  "surname": "Martin",
+  "email": "johnmartin@example.com",
+  "mobile_number": "+254728267134",
+  "city_of_residence": "Nairobi",
+  "country_of_residence": "Kenya",
+  "country_of_interest": "Nigeria",
+  "facebook_account_url": "https://facebook.com/johnmartin",
+  "instagram_url": "https://instagram.com/johnmartin",
+  "telegram_number": "+254728267134",
+  "whatsapp_number": "+254728267134",
+  "tiktok_url": "https://tiktok.com/@johnmartin",
+  "role": "USER"
 }
 
-###
-DELETE  http://localhost:3000/api/ShopProvider/1
 
-###
-PATCH  http://localhost:3000/api/ShopProvider/2
-Content-Type: : application/json
+
+POST http://localhost:4000/api/ShopProvider
+Content-Type: application/json
 
 {
-    ""
+    "USID": "1",
+    "shop_name": "Mphavu",
+    "userUUID": "d2b1c395-08ed-4f41-b6b0-a1712fd5a8cf",
+    "shop_group_name": "Mphavu",
+    "shop_products_types": "services",
+    "shop_address": "Ngumba 201",
+    "shop_phone_number": "+254712456378",
+    "shop_city": "Nairobi",
+    "shop_neighbourhood": "Garden City",
+    "shop_country": "Kenya",
+    "shop_geolocation": "1.2,36.8",
+    "shop_african_location": "Nairobi",
+    "shop_website": "www.mpavu.co.ke",
+    "shop_email": "mphavu@gmail.com",
+    "shop_facebook_page": "mphavu_shop",
+    "shop_instagram": "mphavu_shop",
+    "shop_whatsapp_number": "+254712456378",
+    "shop_telegram_number": "+254712456378",
+    "shop_dizzitup_e_store": "mphavu"
+}
+
+
+
+
+###
+
+DELETE http://localhost:4000/api/ShopProvider/1
+
+###
+
+PATCH http://localhost:4000/api/ShopProvider/2
+Content-Type: application/json
+
+{
+    "shop_name": "mphavu"
 }
