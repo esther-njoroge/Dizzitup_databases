@@ -22,42 +22,145 @@ Content-Type: application/json
   "role": "USER"
 }
 
+###
+POST http://localhost:4000/api/users
+Content-Type: application/json
+
+{
+  "title": "Mrs.",
+  "first_name": "Taylor",
+  "surname": "Kendi",
+  "email": "taylorkendi.com",
+  "mobile_number": "+254748735468",
+  "city_of_residence": "Nairobi",
+  "country_of_residence": "Kenya",
+  "country_of_interest": "Mali",
+  "facebook_account_url": "https://facebook.com/taylorkendi",
+  "instagram_url": "https://instagram.com/taylorkendi",
+  "telegram_number": "+254748735468",
+  "whatsapp_number": "+254748735468",
+  "tiktok_url": "https://tiktok.com/@taylorkendi",
+  "role": "USER"
+}
+
+
+# pushed this one 
+
+###
+# POST http://localhost:4000/api/ShopProvider
+# Content-Type: application/json
+
+# {
+#     "USID": "1",
+#     "shop_name": "Mphavu",
+#     "userUUID": "d2b1c395-08ed-4f41-b6b0-a1712fd5a8cf",
+#     "shop_group_name": "Mphavu",
+#     "shop_products_types": "services",
+#     "shop_address": "Ngumba 201",
+#     "shop_phone_number": "+254712456378",
+#     "shop_city": "Nairobi",
+#     "shop_neighbourhood": "Garden City",
+#     "shop_country": "Kenya",
+#     "shop_geolocation": "1.2,36.8",
+#     "shop_african_location": "Nairobi",
+#     "shop_website": "www.mpavu.co.ke",
+#     "shop_email": "mphavu@gmail.com",
+#     "shop_facebook_page": "mphavu_shop",
+#     "shop_instagram": "mphavu_shop",
+#     "shop_whatsapp_number": "+254712456378",
+#     "shop_telegram_number": "+254712456378",
+#     "shop_dizzitup_e_store": "mphavu"
+# }
+
+
+
 
 
 POST http://localhost:4000/api/ShopProvider
 Content-Type: application/json
 
 {
-    "USID": "1",
-    "shop_name": "Mphavu",
-    "userUUID": "d2b1c395-08ed-4f41-b6b0-a1712fd5a8cf",
-    "shop_group_name": "Mphavu",
-    "shop_products_types": "services",
-    "shop_address": "Ngumba 201",
-    "shop_phone_number": "+254712456378",
-    "shop_city": "Nairobi",
-    "shop_neighbourhood": "Garden City",
-    "shop_country": "Kenya",
-    "shop_geolocation": "1.2,36.8",
-    "shop_african_location": "Nairobi",
-    "shop_website": "www.mpavu.co.ke",
-    "shop_email": "mphavu@gmail.com",
-    "shop_facebook_page": "mphavu_shop",
-    "shop_instagram": "mphavu_shop",
-    "shop_whatsapp_number": "+254712456378",
-    "shop_telegram_number": "+254712456378",
-    "shop_dizzitup_e_store": "mphavu"
+  "USID": "1",
+  "shop_name": "Mphavu",
+  "userUUID": "d2b1c395-08ed-4f41-b6b0-a1712fd5a8cf",
+  "shop_group_name": "Mphavu",
+  "shop_products_types": "services",
+  "shop_address": "Ngumba 201",
+  "shop_phone_number": "+254712456378",
+  "shop_city": "Nairobi",
+  "shop_neighbourhood": "Garden City",
+  "shop_country": "Kenya",
+  "shop_geolocation": "1.2,36.8",
+  "shop_african_location": "Nairobi",
+  "shop_website": "www.mpavu.co.ke",
+  "shop_email": "mphavu@gmail.com",
+  "shop_facebook_page": "mphavu_shop",
+  "shop_instagram": "mphavu_shop",
+  "shop_whatsapp_number": "+254712456378",
+  "shop_telegram_number": "+254712456378",
+  "shop_dizzitup_e_store": "mphavu"
 }
 
 
+###
+POST http://localhost:4000/api/ShopProvider
+Content-Type: application/json
+
+{
+  "USID": "2",
+  "shop_name": "Upile",
+  "userUUID": "2ef661f5-6b84-42d2-aff5-d9d9afd507bc",
+  "shop_group_name": "Upile",
+  "shop_products_types": "services",
+  "shop_address": "Fedha 201",
+  "shop_phone_number": "+254722678439",
+  "shop_city": "Nairobi",
+  "shop_neighbourhood": "Two Rivers",
+  "shop_country": "Kenya",
+  "shop_geolocation": "1.6,38.8",
+  "shop_african_location": "Nairobi",
+  "shop_website": "www.upile.co.ke",
+  "shop_email": "upile@gmail.com",
+  "shop_facebook_page": "Upile_shop",
+  "shop_instagram": "Upile_shop",
+  "shop_whatsapp_number": "+254722678439",
+  "shop_telegram_number": "+254722678439",
+  "shop_dizzitup_e_store": "upile"
+}
+
+
+# {
+#   "USID": "1",
+#   "shop_name": "Mphavu",
+#   "shop_group_name": "Mphavu",
+#   "shop_products_types": "services",
+#   "shop_address": "Ngumba 201",
+#   "shop_phone_number": "+254712456378",
+#   "shop_city": "Nairobi",
+#   "shop_neighbourhood": "Garden City",
+#   "shop_country": "Kenya",
+#   "shop_geolocation": "1.2,36.8",
+#   "shop_african_location": "Nairobi",
+#   "shop_website": "www.mpavu.co.ke",
+#   "shop_email": "mphavu@gmail.com",
+#   "shop_facebook_page": "mphavu_shop",
+#   "shop_instagram": "mphavu_shop",
+#   "shop_whatsapp_number": "+254712456378",
+#   "shop_telegram_number": "+254712456378",
+#   "shop_dizzitup_e_store": "mphavu",
+#   "userUUID": "d2b1c395-08ed-4f41-b6b0-a1712fd5a8cf"  // The UUID of the existing User
+# }
+
+
+
+
 
 
 ###
-
 DELETE http://localhost:4000/api/ShopProvider/1
 
-###
 
+###
 PATCH http://localhost:4000/api/ShopProvider/2
 Content-Type: application/json
 
